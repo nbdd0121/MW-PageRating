@@ -3,7 +3,7 @@
 	"pagerating-ui-rated": "评分成功",
 	"pagerating-ui-error-loading": "无法加载评分结果",
 	"pagerating-ui-rating": "共计 <strong>$1</strong> 人评分，平均分 <strong>$2</strong> 分",
-	"pagerating-ui-already-rated": "您已经为本页面打过分了，继续打分将覆盖你之前的评分$1分。",
+	"pagerating-ui-already-rated": "您已经为本页面打过分了，继续打分将覆盖你之前$1分的评分。",
 	"pagerating-ui-rating-legend": "为本页面评分: ",
 
 	"apihelp-getrating-description": "获取和给定页面相关联的评分信息。",

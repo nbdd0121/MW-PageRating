@@ -7,8 +7,6 @@ class PageRating {
 	public $numRating = null;
 	public $score = null;
 
-	const MAX_RATING_COUNT = 30;
-
 	public function __construct($pageid) {
 		$this->pageid = $pageid;
 	}
@@ -20,9 +18,6 @@ class PageRating {
 			'COUNT(prr_score) numRating',
 		), array(
 			'prr_pageid' => $this->pageid,
-		), __METHOD__, array(
-			'ORDER BY' => 'prr_id DESC',
-			'LIMIT' => static::MAX_RATING_COUNT,
 		));
 		if ($row) {
 			$this->numRating = intval($row->numRating);
