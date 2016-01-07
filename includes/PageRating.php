@@ -33,18 +33,19 @@ class PageRating {
 		}
 	}
 
-	public function isUserRated(\User $user) {
+	public function isUserRated(\User $user, &$score) {
 		if ($user->isAnon()) {
 			$userid = $user->getName();
 		} else {
 			$userid = $user->getId();
 		}
 		$dbr = wfGetDB(DB_SLAVE);
-		$row = $dbr->selectRow('pagerating_records', array('prr_timestamp'), array(
+		$row = $dbr->selectRow('pagerating_records', array('prr_timestamp', 'prr_score'), array(
 			'prr_pageid' => $this->pageid,
 			'prr_user' => $userid,
 		));
 		if ($row) {
+			$score = intval($row->prr_score);
 			return $row->prr_timestamp;
 		} else {
 			return false;

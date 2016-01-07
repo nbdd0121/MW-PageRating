@@ -3,7 +3,7 @@
 function loadResult(data) {
 	setTooltipEnabled('rated' in data);
 	if ('rated' in data) {
-		setTooltipText(mw.msg('pagerating-ui-already-rated'));
+		setTooltipText(mw.msg('pagerating-ui-already-rated', data.myscore));
 	}
 	setResult(data.numrating, data.averagescore);
 	setAverageScore(data.averagescore);

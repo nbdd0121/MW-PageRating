@@ -3,7 +3,7 @@
 	"pagerating-ui-rated": "Rated Successfully",
 	"pagerating-ui-error-loading": "Cannot Load Rating Result",
 	"pagerating-ui-rating": "Rated <strong>$1</strong> Times, Average Rating <strong>$2</strong>",
-	"pagerating-ui-already-rated": "You have already rated this page, rate it again will override your previous rating.",
+	"pagerating-ui-already-rated": "You have already rated this page. Rate again will override your previous rating of score $1.",
 	"pagerating-ui-rating-legend": "Rate for this page: ",
 
 	"apihelp-getrating-description": "Retrieve rating information associated with a given page.",

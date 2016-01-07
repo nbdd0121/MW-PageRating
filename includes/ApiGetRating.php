@@ -16,9 +16,11 @@ class ApiGetRating extends \ApiBase {
 		$rater = new PageRating($pageid);
 
 		$data = array();
-		$timeRated = $rater->isUserRated($user);
+		$score = 0;
+		$timeRated = $rater->isUserRated($user, $score);
 		if ($timeRated) {
 			$data['rated'] = $timeRated;
+			$data['myscore'] = $score;
 		}
 		$data['numrating'] = $rater->getNumRating();
 		$data['averagescore'] = $rater->getRating();

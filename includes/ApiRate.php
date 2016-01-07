@@ -18,6 +18,7 @@ class ApiRate extends \ApiBase {
 		$rater->rate($user, $params['score']);
 
 		$data = array();
+		$data['myscore'] = $params['score'];
 		$data['rated'] = wfTimestamp(TS_MW);
 		$data['numrating'] = $rater->getNumRating();
 		$data['averagescore'] = $rater->getRating();
