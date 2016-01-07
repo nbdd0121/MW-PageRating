@@ -1,0 +1,16 @@
+{
+	"pagerating_desc": "向页面插入评分组件。",
+	"pagerating-ui-rated": "评分成功",
+	"pagerating-ui-error-loading": "无法加载评分结果",
+	"pagerating-ui-rating": "共计 <strong>$1</strong> 人评分，平均分 <strong>$2</strong> 分",
+	"pagerating-ui-already-rated": "您已经为本页面打过分了，继续打分将覆盖你之前的评分。",
+	"pagerating-ui-rating-legend": "为本页面评分: ",
+
+	"apihelp-getrating-description": "获取和给定页面相关联的评分信息。",
+	"apihelp-getrating-param-pageid": "要获取评分的页面ID。",
+	"apihelp-getrating-example-1": "获取页面ID为1的页面的评分。",
+	"apihelp-rate-description": "给给定页面评分。",
+	"apihelp-rate-param-pageid": "要评分的页面ID。",
+	"apihelp-rate-param-score": "用户所给的评分。",
+	"apihelp-rate-example-1": "给页面ID为1的页面评5分。"
+}

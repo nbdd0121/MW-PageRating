@@ -1,0 +1,16 @@
+{
+	"pagerating_desc": "Insert rating widget to pages.",
+	"pagerating-ui-rated": "Rated Successfully",
+	"pagerating-ui-error-loading": "Cannot Load Rating Result",
+	"pagerating-ui-rating": "Rated <strong>$1</strong> Times, Average Rating <strong>$2</strong>",
+	"pagerating-ui-already-rated": "You have already rated this page, rate it again will override your previous rating.",
+	"pagerating-ui-rating-legend": "Rate for this page: ",
+
+	"apihelp-getrating-description": "Retrieve rating information associated with a given page.",
+	"apihelp-getrating-param-pageid": "A page ID to get rating of.",
+	"apihelp-getrating-example-1": "Get rating of a page with ID 1",
+	"apihelp-rate-description": "Rate a given page.",
+	"apihelp-rate-param-pageid": "A page ID to rate.",
+	"apihelp-rate-param-score": "A score given by the user.",
+	"apihelp-rate-example-1": "Rate a page with ID 1 with a score of 5."
+}

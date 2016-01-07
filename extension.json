@@ -1,0 +1,54 @@
+{
+	"name": "PageRating",
+	"author": "Gary Guo",
+	"url": "https://github.com/nbdd0121/MW-PageRating",
+	"descriptionmsg": "pagerating_desc",
+	"version": "0.1.0",
+	"license-name": "BSD-2-Clause",
+	"type": "others",
+	"MessagesDirs": {
+		"PageRating": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {	
+		"PageRating\\Hooks": "Hooks.php",
+		"PageRating\\PageRating": "includes/PageRating.php",
+		"PageRating\\ApiGetRating": "includes/ApiGetRating.php",
+		"PageRating\\ApiRate": "includes/ApiRate.php"
+	},
+	"Hooks": {
+		"BeforePageDisplay": [
+			"PageRating\\Hooks::onBeforePageDisplay"
+		],
+		"LoadExtensionSchemaUpdates": [
+			"PageRating\\Hooks::onLoadExtensionSchemaUpdates"
+		]
+	},
+	"ResourceModules": {
+		"ext.pagerating": {
+			"scripts":[
+				"js/widget.js"
+			],
+			"styles":[
+				"css/widget.css"
+			],
+			"messages": [
+				"pagerating-ui-rated",
+				"pagerating-ui-error-loading",
+				"pagerating-ui-rating",
+				"pagerating-ui-already-rated",
+				"pagerating-ui-rating-legend"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "PageRating"
+	},
+	"APIModules": {
+		"getrating": "PageRating\\ApiGetRating",
+		"rate": "PageRating\\ApiRate"
+	},
+	"manifest_version": 1
+}

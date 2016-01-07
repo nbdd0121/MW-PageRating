@@ -1,0 +1,111 @@
+.rating-icon[icon=loading] {
+	background: url(../images/loading.gif) no-repeat right center;
+}
+
+.rating-icon[icon=success] {
+	background: url(../images/success.png) no-repeat right center;
+}
+
+.rating-icon[icon=error] {
+	background: url(../images/error.png) no-repeat right center;
+}
+
+.rating-icon {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.rating-text {
+	padding-left: 5px;
+	display: inline-block;
+}
+
+.rating-result {
+	display: inline-block;
+}
+
+.rating-star-container {
+	position: relative;
+	display: inline-block;
+	width: 150px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.rating-result-glasspane {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 30px;
+	width: 0px;
+	background: url(../images/starrating.png) repeat-x 0 -60px;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.rating-star {
+	display: inline-block;
+	width: 30px;
+    height: 30px;
+	position: relative;
+	background: url(../images/starrating.png) no-repeat 0 0;
+}
+
+.rating-star div {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	pointer-events: none;
+	z-index: 2;
+}
+
+.rating-star-1 div {
+	left: 0px;
+	width: 30px;
+}
+
+.rating-star-2 div {
+	left: -30px;
+	width: 60px;
+}
+
+.rating-star-3 div {
+	left: -60px;
+	width: 90px;
+}
+
+.rating-star-4 div {
+	left: -90px;
+	width: 120px;
+}
+
+.rating-star-5 div {
+	left: -120px;
+	width: 150px;
+}
+
+.rating-widget[enabled] .rating-star:hover div {
+	background: url(http://192.168.200.130/w/extensions/PageRating/images/starrating.png) repeat-x 0 -30px;
+}
+
+.rating-tooltip {
+	position: absolute;
+	top: -30px;
+	left: 0px;
+	padding: 0 10px;
+    line-height: 24px;
+    border: 1px solid #a55858;
+    color: #a55858;
+    font-size: 12px;
+    background: white;
+    z-index: 1000;
+    display: none;
+    white-space: nowrap;
+}
+
+.rating-star-container:hover .rating-tooltip[enabled] {
+	display: initial;
+}
