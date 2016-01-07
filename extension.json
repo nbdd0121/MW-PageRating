@@ -28,10 +28,10 @@
 	"ResourceModules": {
 		"ext.pagerating": {
 			"scripts":[
-				"js/widget.js"
+				"assets/widget.js"
 			],
 			"styles":[
-				"css/widget.css"
+				"assets/widget.css"
 			],
 			"messages": [
 				"pagerating-ui-rated",

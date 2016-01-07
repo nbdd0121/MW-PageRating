@@ -88,7 +88,7 @@
 }
 
 .rating-widget[enabled] .rating-star:hover div {
-	background: url(http://192.168.200.130/w/extensions/PageRating/images/starrating.png) repeat-x 0 -30px;
+	background: url(../images/starrating.png) repeat-x 0 -30px;
 }
 
 .rating-tooltip {
