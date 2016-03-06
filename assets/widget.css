@@ -40,7 +40,7 @@
 	top: 0px;
 	height: 30px;
 	width: 0px;
-	background: url(../images/starrating.png) repeat-x 0 -60px;
+	background: url(../images/star.svg);
 	z-index: 1;
 	pointer-events: none;
 }
@@ -50,7 +50,7 @@
 	width: 30px;
     height: 30px;
 	position: relative;
-	background: url(../images/starrating.png) no-repeat 0 0;
+	background: url(../images/emptystar.svg);
 }
 
 .rating-star div {
@@ -88,7 +88,7 @@
 }
 
 .rating-widget[enabled] .rating-star:hover div {
-	background: url(../images/starrating.png) repeat-x 0 -30px;
+	background: url(../images/selectedstar.svg);
 }
 
 .rating-tooltip {
